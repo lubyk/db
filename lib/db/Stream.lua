@@ -281,13 +281,13 @@ end
 -- called (while recording is true).
 function lib:rec(hash)
   if self.recording then
-    hash.t = worker:now() - self.rec_offset
+    hash.t = elapsed() - self.rec_offset
     self:set(hash)
   end
 end
 
 function lib:recStart()
-  self.rec_offset = worker:now()
+  self.rec_offset = elapsed()
   self.recording  = true
 end
 

@@ -5,11 +5,11 @@
 #    db.lua
 #    db/Stream.lua, etc
 # --------------------------------------------------------------
-set(MODULE_NAME editor)
+set(MODULE_NAME db)
 
 # --------------------------------------------------------------
 #  install                                     
 # --------------------------------------------------------------
-install(DIRECTORY lubyk
-  DESTINATION lib
-)                                  
+install(DIRECTORY lib
+  DESTINATION ${LUBYK_LIB}
+)
